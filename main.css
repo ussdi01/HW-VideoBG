@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    overflow: hidden;
+}
+
+.page{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.Background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.Background video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text{
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    word-spacing: 20px;
+    background: rgba(94, 94, 94, 0.333);
+}
+
+.text h3{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(231, 89, 110);
+    margin-top: 250px;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 30px;
+}
+    
+.text h2{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.text h1{
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+}
+
+@media screen and (max-width: 900px){
+    .text{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .text{
+        font-size: 16px;
+    }
+}
